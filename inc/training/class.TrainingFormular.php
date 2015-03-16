@@ -8,14 +8,14 @@ use Runalyze\Configuration;
 
 /**
  * Formular for trainings
- * 
+ *
  * This training formular extends StandardFormular and can be used for creating
  * a new training as well as for editing an existing training.
- * 
+ *
  * Nearly all fields are set directly through the given DatabaseScheme for a training.
  * This class only extends the standard formular with some additional values
  * (e.g. created-timestamp) and additional fieldsets for adding gps-data etc.
- * 
+ *
  * @author Hannes Christiansen
  * @package Runalyze\DataObjects\Training
  */
@@ -104,7 +104,7 @@ class TrainingFormular extends StandardFormular {
 	}
 
 	/**
-	 * Display fieldset: Delete training 
+	 * Display fieldset: Delete training
 	 */
 	protected function initDeleteFieldset() {
 		$DeleteText = '<strong>'.__('Permanently delete this activity').' &raquo;</strong>';
@@ -142,11 +142,11 @@ class TrainingFormular extends StandardFormular {
 	}
 
 	/**
-	 * Append JavaScript 
+	 * Append JavaScript
 	 */
 	protected function appendJavaScript() {
 		echo '<script type="text/javascript">';
-		include FRONTEND_PATH.'../lib/jquery.form.include.php';
+		include FRONTEND_PATH . '../lib/jquery.form.include.php';
 		echo '</script>';
 	}
 }

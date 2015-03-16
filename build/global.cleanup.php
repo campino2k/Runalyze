@@ -1,10 +1,10 @@
 <?php
 /**
  * Script to run a global cleanup
- * 
+ *
  * You have to set your database connection within this file to enable the script.
  * Remember to delete your credentials afterwards to protect this script.
- * 
+ *
  * Hint: This script is currently only a dirty hack. Don't rely on this in future versions.
  * @since 2.0.0
  */
@@ -54,10 +54,10 @@ if (empty($database) && empty($hostname)) {
 		exit;
 	}
 
-	require_once FRONTEND_PATH.'../lib/phpfastcache/phpfastcache.php';
+	require_once FRONTEND_PATH . '../lib/phpfastcache/phpfastcache.php';
 	require_once FRONTEND_PATH.'/system/class.Cache.php';
 	new Cache();
-	
+
 	require_once FRONTEND_PATH.'/system/define.consts.php';
 
 	if (!function_exists('__')) {

@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "Runalyze";
-  src: url("./Runalyze_e04737d6af6b96899a220a054187540e.eot");
-  src: url("./Runalyze_e04737d6af6b96899a220a054187540e.eot?#iefix") format("embedded-opentype"),
-       url("./Runalyze_e04737d6af6b96899a220a054187540e.woff") format("woff"),
-       url("./Runalyze_e04737d6af6b96899a220a054187540e.ttf") format("truetype"),
-       url("./Runalyze_e04737d6af6b96899a220a054187540e.svg#Runalyze") format("svg");
+  src: url("Runalyze_e04737d6af6b96899a220a054187540e.eot");
+  src: url("Runalyze_e04737d6af6b96899a220a054187540e.eot?#iefix") format("embedded-opentype"),
+       url("Runalyze_e04737d6af6b96899a220a054187540e.woff") format("woff"),
+       url("Runalyze_e04737d6af6b96899a220a054187540e.ttf") format("truetype"),
+       url("Runalyze_e04737d6af6b96899a220a054187540e.svg#Runalyze") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Runalyze";
-    src: url("./Runalyze_e04737d6af6b96899a220a054187540e.svg#Runalyze") format("svg");
+    src: url("Runalyze_e04737d6af6b96899a220a054187540e.svg#Runalyze") format("svg");
   }
 }
 

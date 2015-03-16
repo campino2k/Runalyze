@@ -13,7 +13,7 @@ nbproject/
 #Runalyze
 build/yuicompressor-*
 img/backgrounds/My-*
-lib/phpfastcache/cache.storage.*
+src/lib/phpfastcache/cache.storage.*
 *.xcf
 config.php
 *.mo

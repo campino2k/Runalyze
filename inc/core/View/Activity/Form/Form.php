@@ -16,7 +16,7 @@ use Ajax;
 
 /**
  * Form
- * 
+ *
  * @author Hannes Christiansen
  * @package Runalyze\View\Activity\Form
  */
@@ -111,7 +111,7 @@ class Form extends StandardFormular {
 	}
 
 	/**
-	 * Display fieldset: Delete training 
+	 * Display fieldset: Delete training
 	 */
 	protected function initDeleteFieldset() {
 		$DeleteText = '<strong>'.__('Permanently delete this activity').' &raquo;</strong>';
@@ -126,7 +126,7 @@ class Form extends StandardFormular {
 	}
 
 	/**
-	 * Add fieldset for adding GPS-data 
+	 * Add fieldset for adding GPS-data
 	 */
 	protected function initGPSFieldset() {
 		if ($this->dataObject->hasPositionData()) {
@@ -155,11 +155,11 @@ class Form extends StandardFormular {
 	}
 
 	/**
-	 * Append JavaScript 
+	 * Append JavaScript
 	 */
 	protected function appendJavaScript() {
 		echo '<script type="text/javascript">';
-		include FRONTEND_PATH.'../lib/jquery.form.include.php';
+		include FRONTEND_PATH . '../lib/jquery.form.include.php';
 		echo '</script>';
 	}
 }

@@ -8,9 +8,9 @@ $Frontend = new Frontend(true);
 	<meta charset="UTF-8">
 	<title>Garmin Communicator</title>
 
-	<link rel="stylesheet" href="../lib/garmin/communicator2.css">
-	<script src="../lib/garmin/prototype/prototype.js"></script>
-	<script src="../lib/garmin/garmin/device/GarminDeviceDisplay.js"></script>
+	<link rel="stylesheet" href="../src/lib/garmin/communicator2.css">
+	<script src="../src/lib/garmin/prototype/prototype.js"></script>
+	<script src="../src/lib/garmin/garmin/device/GarminDeviceDisplay.js"></script>
 	<script>
 		function ignoreID(id,e) {
 			var p = e.parentNode;
@@ -46,7 +46,7 @@ $Frontend = new Frontend(true);
 				uploadsFinished: "<?php _e('Transfer complete'); ?>",
 				uploadSelectedActivities: true,
 				uploadCompressedData: true,
-				uploadMaximum: 40, 
+				uploadMaximum: 40,
 				browseComputerButtonText: "<?php _e('Browse computer'); ?>",
 				cancelUploadButtonText: "<?php _e('Cancel'); ?>",
 				changeDeviceButtonText: "<?php _e('Cancel'); ?>",

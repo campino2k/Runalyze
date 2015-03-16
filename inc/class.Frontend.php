@@ -8,17 +8,17 @@ use Runalyze\Configuration;
 
 /**
  * Frontend class for setting up everything
- * 
+ *
  * The frontend initializes everything for Runalyze.
  * It sets the autoloader, constants and mysql-connection.
  * By default, constructing a new frontend will print a html-header.
- * 
+ *
  * Standard initialization of Runalyze:
  * <code>
  *  require 'inc/class.Frontend.php';
  *  $Frontend = new Frontend();
  * </code>
- * 
+ *
  * @author Hannes Christiansen
  * @package Runalyze\Frontend
  */
@@ -43,10 +43,10 @@ class Frontend {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * Constructing a new Frontend includes all files and sets the correct header.
 	 * Runalyze is not usable without setting up the environment with this class.
-	 * 
+	 *
 	 * @param bool $hideHeaderAndFooter By default a html-header is directly shown
 	 */
 	public function __construct($hideHeaderAndFooter = false) {
@@ -69,7 +69,7 @@ class Frontend {
 	}
 
 	/**
-	 * Init system 
+	 * Init system
 	 */
 	private function initSystem() {
 		define('RUNALYZE', true);
@@ -87,7 +87,7 @@ class Frontend {
 	}
 
 	/**
-	 * Set up Autloader 
+	 * Set up Autloader
 	 */
 	private function setAutoloader() {
 		require_once FRONTEND_PATH.'/system/class.Autoloader.php';
@@ -101,12 +101,12 @@ class Frontend {
 		require_once FRONTEND_PATH.'/system/class.Language.php';
 		new Language();
 	}
-                
+
         /**
 	 * Setup Language
 	 */
 	private function initCache() {
-		require_once FRONTEND_PATH.'../lib/phpfastcache/phpfastcache.php';
+		require_once FRONTEND_PATH . '../lib/phpfastcache/phpfastcache.php';
 		require_once FRONTEND_PATH.'/system/class.Cache.php';
 		new Cache();
 	}
@@ -193,7 +193,7 @@ class Frontend {
 	}
 
 	/**
-	 * Set correct character encoding 
+	 * Set correct character encoding
 	 */
 	final public function setEncoding() {
 		header('Content-type: text/html; charset=utf-8');
@@ -242,9 +242,9 @@ class Frontend {
 
 	/**
 	 * Test a plot
-	 * 
+	 *
 	 * Will be displayed instead of the DataBrowser - Only for testing purposes!
-	 * @param string $includePath 
+	 * @param string $includePath
 	 * @param string $name
 	 * @param int $width
 	 * @param int $height
